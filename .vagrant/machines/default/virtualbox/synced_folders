@@ -1,0 +1,8 @@
+{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/PNayee/Engineering3637/DevOpsMuttablePipeline1/Day4","disabled":false,"__vagrantfile":true}}}
+
+location / {
+                proxy_pass "http://localhost:3000";
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                try_files $uri $uri/ =404;
+        }
